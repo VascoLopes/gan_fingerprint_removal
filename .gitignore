@@ -1,0 +1,4 @@
+.idea/*
+data/*
+fingerprint_removal/cae_models/cae32/*
+fingerprint_removal/cae_models/real2real/*
