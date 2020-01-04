@@ -1,40 +1,16 @@
+
 import os
+import cv2
+import sys
+import glob
 import torch
-import torchvision
-from torch import nn
+from torchvision import transforms
 from torch.autograd import Variable
-from torch.utils.data import DataLoader
-from torchvision import transforms, datasets
-from torchvision.utils import save_image
-import numpy as np
+from PIL import Image
 
-save_list =[]
+class Autoencoder(torch.nn.Module):
 
-# PARAMS
-batch_size = 128
-num_epochs = 200
-learning_rate = 1e-3
-latent_code_size = 4
-
-data_transform = transforms.Compose([
-    transforms.Resize(224),
-    transforms.ToTensor(),
-])
-
-my_dataset = datasets.ImageFolder(root='W:\\DEEP_FAKE_DETECTION\\real2real\\', transform=data_transform)
-
-dataset_loader = torch.utils.data.DataLoader(
-    my_dataset,
-    batch_size=batch_size,
-    shuffle=True,
-    num_workers=0,
-    drop_last=True
-    )
-
-
-class ConvolutionalAutoencoder(torch.nn.Module):
-
-    def __init__(self):
+    def __init__(self, latent_code_size):
         super().__init__()
 
         self.conv1 = torch.nn.Conv2d(3, 32, 3, padding=1)
@@ -100,35 +76,73 @@ class ConvolutionalAutoencoder(torch.nn.Module):
         #l=input('Done')
         return output
 
+def image_loader(image_name, input_shape):
 
-########################################################################
-# GPU
-cae = ConvolutionalAutoencoder().cuda()
+    loader = transforms.Compose([transforms.Scale(input_shape), transforms.ToTensor()])
 
-# Loss & Optimizer
-loss_func = nn.MSELoss()
-optimizer = torch.optim.Adam(cae.parameters(), lr=learning_rate)
+    """load image, returns cuda tensor"""
+    image = Image.open(image_name)
+    image = loader(image).float()
+    image = Variable(image, requires_grad=True)
+    image = image.unsqueeze(0)  #this is for VGG, may not be needed for ResNet
+    return image
 
-# Train
-for epoch in range(num_epochs):
-    i = 0
-    for data in dataset_loader:
-        i = i + 1
-        image, _ = data
-        image = Variable(image).cuda()
-        optimizer.zero_grad()
+def recon_image(model, image_name, input_shape):
 
-        output = cae(image)
-    
-        loss = loss_func(output,image)
-        loss.backward()
-        optimizer.step()
-        if epoch+1 in save_list:
-            save_image(image, './imgsCAE/e{}_i{}.png'.format(epoch+1, i))
-            save_image(output, './imgsCAE/e{}_o{}.png'.format(epoch+1, i))
-    print('epoch [{}/{}], loss: {:.4f}'.format(epoch + 1, num_epochs, loss.data))
-    torch.save(cae.state_dict(), 
-               'cae' + str(latent_code_size) + "\\cae" + str(latent_code_size) + "_epoch" + str(epoch) + ".pytorch")
+    image = image_loader(image_name, input_shape)
+    image_recon = model(image.clone().detach())
+
+    image_recon_cv = image_recon[0].mul_(255).add_(0.5).clamp_(0, 255).permute(1, 2, 0).to('cpu', torch.uint8).numpy()
+    image_recon_cv = cv2.cvtColor(image_recon_cv, cv2.COLOR_RGB2BGR)
+
+    return image_recon_cv
+
+''' ----------------------------- PARAMS -----------------------------  '''
+
+ae_epochs = 100
+latent_code_size = 32
+original_image_path = 'F:\\FACE_DATASETS\\NVIDIA_FakeFace\\byimg_alignedlib_0.3'
+transformed_image_path = 'NVIDIA_FakeFace\\byimg_alignedlib_0.3_nofingerprint'
 
 
-#torch.save(cae.state_dict(), 'cae20.pytorch')
+model_dir = 'fingerprint_removal\\ae_models\\ae{0}\\ae{0}_epoch{1}.pytorch'.format(latent_code_size, ae_epochs-1)
+
+if len(sys.argv) > 1:
+    original_image_path = sys.argv[1]
+    transformed_image_path = sys.argv[2]
+    model_dir = sys.argv[3]
+
+# load ae
+model = Autoencoder(latent_code_size)
+model.load_state_dict(torch.load(model_dir))
+
+# ----------------------- LOAD DATA ---------------------------- #
+
+image_list = glob.glob(original_image_path + '\\*.jpg')
+
+
+# ----------------------- CREATE FOLDERS ---------------------------- #
+
+try:
+    os.makedirs(transformed_image_path)
+except OSError:
+    print("Creation of the directory %s failed" % transformed_image_path)
+else:
+    print("Successfully created the directory %s " % transformed_image_path)
+
+# ----------------------- TRANSFORM IMAGES ---------------------------- #
+
+
+for image_path in image_list:
+
+    output_image_path = image_path.replace(original_image_path, transformed_image_path)
+
+
+    im = recon_image(model, image_path, 224)
+
+    cv2.imwrite(output_image_path, im)
+
+
+
+
+

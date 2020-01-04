@@ -14,14 +14,14 @@ save_list =[]
 batch_size = 128
 num_epochs = 200
 learning_rate = 1e-3
-latent_code_size = 1
+latent_code_size = 256
 
 data_transform = transforms.Compose([
     transforms.Resize(224),
     transforms.ToTensor(),
 ])
 
-my_dataset = datasets.ImageFolder(root='real2real\\', transform=data_transform)
+my_dataset = datasets.ImageFolder(root='W:\\DEEP_FAKE_DETECTION\\real2real\\', transform=data_transform)
 
 dataset_loader = torch.utils.data.DataLoader(
     my_dataset,
@@ -30,6 +30,13 @@ dataset_loader = torch.utils.data.DataLoader(
     num_workers=0,
     drop_last=True
     )
+
+
+def transferWeighetsDecoder(ae2):
+    ae.trans1.weight.data = ae2.trans1.weight.data
+    ae.trans2.weight.data = ae2.trans2.weight.data
+    ae.trans3.weight.data = ae2.trans3.weight.data
+    ae.trans4.weight.data = ae2.trans4.weight.data
 
 
 class ConvolutionalAutoencoder(torch.nn.Module):
@@ -103,11 +110,11 @@ class ConvolutionalAutoencoder(torch.nn.Module):
 
 ########################################################################
 # GPU
-cae = ConvolutionalAutoencoder().cuda()
+ae = ConvolutionalAutoencoder().cuda()
 
 # Loss & Optimizer
 loss_func = nn.MSELoss()
-optimizer = torch.optim.Adam(cae.parameters(), lr=learning_rate)
+optimizer = torch.optim.Adam(ae.parameters(), lr=learning_rate)
 
 # Train
 for epoch in range(num_epochs):
@@ -118,17 +125,15 @@ for epoch in range(num_epochs):
         image = Variable(image).cuda()
         optimizer.zero_grad()
 
-        output = cae(image)
+        output = ae(image)
     
         loss = loss_func(output,image)
         loss.backward()
         optimizer.step()
         if epoch+1 in save_list:
-            save_image(image, './imgsCAE/e{}_i{}.png'.format(epoch+1, i))
-            save_image(output, './imgsCAE/e{}_o{}.png'.format(epoch+1, i))
+            save_image(image, './imgsae/e{}_i{}.png'.format(epoch+1, i))
+            save_image(output, './imgsae/e{}_o{}.png'.format(epoch+1, i))
     print('epoch [{}/{}], loss: {:.4f}'.format(epoch + 1, num_epochs, loss.data))
-    torch.save(cae.state_dict(), 
-               'cae' + str(latent_code_size) + "\\cae" + str(latent_code_size) + "_epoch" + str(epoch) + ".pytorch")
+    torch.save(ae.state_dict(),
+               'ae' + str(latent_code_size) + "\\ae" + str(latent_code_size) + "_epoch" + str(epoch) + ".pytorch")
 
-
-#torch.save(cae.state_dict(), 'cae20.pytorch')

@@ -1,112 +1,14 @@
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R32 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R64 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R96 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R128 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R160 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R192 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R224 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R32 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R64 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R96 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R128 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R160 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R192 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_CASIA_100F_test_R224 F:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R32 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R64 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R96 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R128 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R160 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R192 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_VF2_TPDNE_test_R224 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R32 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R64 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R96 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R128 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R160 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R192 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_VF2_100F_train_CASIA_TPDNE_test_R224 F:\gan_fingerprint_removal\data\real2fake_VF2_100F
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R32 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R64 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R96 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R128 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R160 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R192 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_VF2_100F_test_R224 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R32 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R64 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R96 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R128 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R160 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R192 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE_train_CASIA_100F_test_R224 F:\gan_fingerprint_removal\data\real2fake_CASIA_TPDNE
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R32 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R64 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R96 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R128 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R160 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R192 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_VF2_TPDNE_test_R224 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 32 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R32
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R32 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 64 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R64
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R64 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 96 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R96
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R96 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 128 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R128
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R128 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 160 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R160
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R160 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 192 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R192
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R192 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
-python transform_dataset_downsize.py 224 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R224
-python ..//..//test_pytorch_gpu.py F:\gan_fingerprint_removal\data\real2fake_CASIA_100F_train_CASIA_TPDNE_test_R224 F:\gan_fingerprint_removal\data\real2fake_CASIA_100F
+python transform_dataset_downsize.py 32 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R32
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R32 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
+python transform_dataset_downsize.py 64 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R64
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R64 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
+python transform_dataset_downsize.py 96 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R96
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R96 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
+python transform_dataset_downsize.py 128 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R128
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R128 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
+python transform_dataset_downsize.py 160 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R160
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R160 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
+python transform_dataset_downsize.py 192 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R192
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R192 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE
+python transform_dataset_downsize.py 224 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R224
+python ..//..//test_pytorch_gpu.py E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE_train_VF2_100F_test_R224 E:\gan_fingerprint_removal\data\real2fake_VF2_TPDNE

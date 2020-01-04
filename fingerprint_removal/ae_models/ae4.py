@@ -14,7 +14,7 @@ save_list =[]
 batch_size = 128
 num_epochs = 200
 learning_rate = 1e-3
-latent_code_size = 32
+latent_code_size = 4
 
 data_transform = transforms.Compose([
     transforms.Resize(224),
@@ -103,11 +103,11 @@ class ConvolutionalAutoencoder(torch.nn.Module):
 
 ########################################################################
 # GPU
-cae = ConvolutionalAutoencoder().cuda()
+ae = ConvolutionalAutoencoder().cuda()
 
 # Loss & Optimizer
 loss_func = nn.MSELoss()
-optimizer = torch.optim.Adam(cae.parameters(), lr=learning_rate)
+optimizer = torch.optim.Adam(ae.parameters(), lr=learning_rate)
 
 # Train
 for epoch in range(num_epochs):
@@ -118,17 +118,17 @@ for epoch in range(num_epochs):
         image = Variable(image).cuda()
         optimizer.zero_grad()
 
-        output = cae(image)
+        output = ae(image)
     
         loss = loss_func(output,image)
         loss.backward()
         optimizer.step()
         if epoch+1 in save_list:
-            save_image(image, './imgsCAE/e{}_i{}.png'.format(epoch+1, i))
-            save_image(output, './imgsCAE/e{}_o{}.png'.format(epoch+1, i))
+            save_image(image, './imgsae/e{}_i{}.png'.format(epoch+1, i))
+            save_image(output, './imgsae/e{}_o{}.png'.format(epoch+1, i))
     print('epoch [{}/{}], loss: {:.4f}'.format(epoch + 1, num_epochs, loss.data))
-    torch.save(cae.state_dict(), 
-               'cae' + str(latent_code_size) + "\\cae" + str(latent_code_size) + "_epoch" + str(epoch) + ".pytorch")
+    torch.save(ae.state_dict(), 
+               'ae' + str(latent_code_size) + "\\ae" + str(latent_code_size) + "_epoch" + str(epoch) + ".pytorch")
 
 
-#torch.save(cae.state_dict(), 'cae20.pytorch')
+#torch.save(ae.state_dict(), 'ae20.pytorch')

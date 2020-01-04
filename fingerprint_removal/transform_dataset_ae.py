@@ -99,13 +99,13 @@ def recon_image(model, image_name, input_shape):
 
 ''' ----------------------------- PARAMS -----------------------------  '''
 
-cae_epochs = 200
+ae_epochs = 200
 latent_code_size = 256
 original_dataset_dir = 'G:\\deepfakepaper\\exp2\\real2fake_100F_CASIA_train_NFF_VF2_test'
-out_path = 'real2fake_cae{0}_{1}_100F_VF2_train_NFF_VF2_test'.format(latent_code_size, cae_epochs)
+out_path = 'real2fake_ae{0}_{1}_100F_VF2_train_NFF_VF2_test'.format(latent_code_size, ae_epochs)
 
 if len(sys.argv) > 1:
-    cae_epochs = int(sys.argv[1])
+    ae_epochs = int(sys.argv[1])
     latent_code_size = int(sys.argv[2])
     original_dataset_dir = sys.argv[3]
     out_path = sys.argv[4]
@@ -113,10 +113,10 @@ if len(sys.argv) > 1:
 
 
 subset_class_to_modify = [('test','0'), ('test','1')]
-model_dir = 'cae_models\\cae{0}\\cae{0}_epoch{1}.pytorch'.format(latent_code_size, cae_epochs-1)
+model_dir = 'ae_models\\ae{0}\\ae{0}_epoch{1}.pytorch'.format(latent_code_size, ae_epochs-1)
 
 
-# load cae
+# load ae
 model = ConvolutionalAutoencoder(latent_code_size)
 model.load_state_dict(torch.load(model_dir))
 

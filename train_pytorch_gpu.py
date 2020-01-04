@@ -150,7 +150,7 @@ if __name__ == '__main__':
     scale = 224
     use_parallel = True
     use_gpu = True
-    epochs = 2
+    epochs = 20
 
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
