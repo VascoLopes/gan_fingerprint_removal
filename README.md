@@ -2,15 +2,17 @@
 
 ## Introduction
 
-This repo provides the implementation of a GAN fingerprint removal approach, as described in
+This repo provides the implementation of a GAN fingerprint removal approach, as described in [Real or Fake? Spoofing State-Of-The-Art Face Synthesis Detection Systems](https://arxiv.org/abs/1911.05351)
 
+Use this bibtex to cite this repository:
+```
 @misc{1911.05351,
 Author = {João C. Neves and Ruben Tolosana and Ruben Vera-Rodriguez and Vasco Lopes and Hugo Proença},
 Title = {Real or Fake? Spoofing State-Of-The-Art Face Synthesis Detection Systems},
 Year = {2019},
 Eprint = {arXiv:1911.05351},
 }
-
+```
 
 ## Remove GAN fingerprint from a folder of images
 
